@@ -1,10 +1,10 @@
 {
   "name": "deepika-portfolio",
-  "homepage": "https://Deepika253.github.io/deepika-portfolio",
+  "homepage": "https://Deepika253.github.io/FUTURE_FS_01",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": { 
+  "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",

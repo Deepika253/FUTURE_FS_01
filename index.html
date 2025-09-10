@@ -4,32 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deepika E | Portfolio</title>
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">DE</div>
+      <a href="#hero" class="brand">
+        <span class="brand-mark">DE</span>
+        <span class="brand-text">Deepika E</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="cta-link">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header id="hero" class="hero">
-      <h1 class="hero-title">Deepika E</h1>
-      <p class="hero-tagline">AI • Web • Data Enthusiast</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <div class="hero-inner">
+        <h1 class="hero-title">Hello, I’m <span>Deepika</span></h1>
+        <p class="hero-sub">
+          Aspiring Web Developer • AI & ML Enthusiast • Tech Explorer
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View My Work</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
     </header>
 
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <!-- Circular neon avatar -->
+          <div class="avatar">DE</div>
+        </div>
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I’m <strong>Deepika E</strong>, a B.Tech CSE (AI & ML) student
+            passionate about building modern, user-friendly web applications and
+            exploring how AI can solve real-world problems.
+          </p>
+          <p>
+            I enjoy crafting clean UI, writing maintainable code, and turning
+            ideas into usable products. My interests span frontend development,
+            data analytics, and AI-driven solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section Divider -->
+
+    <div class="section-divider"></div>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section achievements">
+      <div class="container">
+        <h2 class="section-title">🏆 Achievements</h2>
+        <ul class="achievements-list">
+          <li>
+            Top 5 Finalist – Hack-n-Win Hackathon (sponsored by Microsoft
+            Reskill)
+          </li>
+          <li>
+            Coordinator – Event & Club Lead (team management & organization)
+          </li>
+          <li>Received Certificate of Coordination for college-level events</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <p class="section-lead">
+          Languages, frameworks, and tools I work with.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="devicon-c-plain"></i><span>C</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-cplusplus-plain"></i><span>C++</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-java-plain"></i><span>Java</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-python-plain"></i><span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-javascript-plain"></i><span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-html5-plain"></i><span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-css3-plain"></i><span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-react-original"></i><span>React</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-nodejs-plain"></i><span>Node.js</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-mongodb-plain"></i><span>MongoDB</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-mysql-plain"></i><span>SQL/MySQL</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-git-plain"></i><span>Git/GitHub</span>
+          </div>
+          <div class="skill-card">
+            <i class="devicon-tensorflow-original"></i><span>ML / AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
+    <section id="projects" class="section">
+      <h2 class="section-title">🚀 Projects</h2>
+      <div class="projects-container">
         <div class="project-card">
+          <img src="images/project1.png" alt="Project 1" />
+          <h3>Portfolio Website</h3>
+          <p>
+            A sleek personal portfolio showcasing my skills, projects, and
+            resume with neon effects.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project2.png" alt="Project 2" />
           <h3>Cyberbullying Detection on Social Media</h3>
           <p>
             Developed a machine learning model using NLP techniques and
@@ -37,7 +168,9 @@
             SVM to identify harmful content.
           </p>
         </div>
+
         <div class="project-card">
+          <img src="images/project3.png" alt="Project 3" />
           <h3>Face-to-BMI: A Deep Learning Based Approach</h3>
           <p>
             Implemented CNN models to predict Body Mass Index (BMI) from facial
@@ -45,58 +178,48 @@
             augmentation.
           </p>
         </div>
-        <div class="project-card">
-          <h3>Goal Tracker (Fitness & Study)</h3>
-          <p>
-            A React-based application to track fitness and study goals with a
-            dashboard, task manager, and progress visualization.
-          </p>
-        </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <div class="skill-list">
-        <div class="skill-card">C</div>
-        <div class="skill-card">C++</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Java</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">React.js</div>
-        <div class="skill-card">MongoDB</div>
-      </div>
-    </section>
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <p>
-        Email: <a href="mailto:deepikae253@gmail.com">deepikae253@gmail.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a
-          href="https://www.linkedin.com/in/deepika-ellulla-739977256"
-          target="_blank"
-          >linkedin.com/in/deepika-ellulla-739977256</a
-        >
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/deepika-e" target="_blank"
-          >github.com/deepika-e</a
-        >
-      </p>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-card">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:deepikae253@gmail.com">deepikae253@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/deepika-ellulla-739977256/"
+              target="_blank"
+              rel="noopener"
+              >www.linkedin.com/in/deepika-ellulla-739977256/</a
+            >
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a
+              href="https://github.com/Deepika253"
+              target="_blank"
+              rel="noopener"
+              >github.com/deepika253</a
+            >
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-      <p>© 2025 Deepika E | Portfolio</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Deepika E • Portfolio</p>
+      </div>
     </footer>
   </body>
 </html>
